@@ -24,3 +24,13 @@ Your final amount is $39152.94
 You earned $14152.94 interest
 ```
 '''
+
+principal = float(input("Enter the principal amount: "))
+rate = float(input("Enter the annual interest rate (as a decimal): "))
+time = float(input("Enter the time period in years: "))
+final_amount = float(input("Enter the final amount: "))
+
+amount = principal * (rate/12)**(time)
+compound_interest = amount - principal
+
+print(f"The compound interest is: {compound_interest}")

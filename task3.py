@@ -28,3 +28,16 @@ Your half perimeter is 14.5
 The area of your triangle is 29.342
 '''
 
+import math
+
+def calculate_area():
+    
+    a, b, c = map(float, input("Enter the lengths of the three sides separated by commas: ").split(","))
+    print()
+    h=(float("Enter your half perimeter: "))
+    
+    area = math.sqrt(h * (h - a) * (h - b) * (h - c))
+    
+    print(f"The area of the triangle with sides {a}, {b}, and {c} is {area:.4f} square units.")
+
+calculate_area()

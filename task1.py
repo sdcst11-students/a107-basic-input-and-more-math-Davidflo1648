@@ -18,3 +18,11 @@ Enter actual : 14
 The percent difference is 16.67%
 ```
 '''
+
+Expected_Value = float(input("Enter expected value: "))
+Actual_Value = float(input("Enter actual value: "))
+
+Percent_Error = abs(Expected_Value - Actual_Value) / Actual_Value * 100
+
+print(f"The percent difference is: {Percent_Error}%")
+
